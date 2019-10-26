@@ -1,10 +1,14 @@
 /***********全局样式************/
+* {
+  box-sizing: border-box;
+}
 body {
   margin:0;
   padding: 0;
 }
 a {
   text-decoration: none;
+  cursor: pointer;
   &:visited{
     color: #C0C0C0;
   }
@@ -22,12 +26,290 @@ ol{
   padding: 0;
 }
 /************头部样式**************/
+@media screen and (min-width: 1060px){
+  .nav-list li {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .as-banner-content {
+    position: absolute;
+    top: 100px;
+  }
+  .middle-part .as-banner-content {
+    position: absolute;
+    left: 20%;
+    top: 100px;
+    width: 400px;
+  }
+  .topBanner {
+    min-height: 540px;
+  }
+  .topBanner input {
+    width: 50%;
+  }
+  .row2 {
+    display: flex;
+    width: 1024px;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+    flex-wrap: wrap;
+    span {
+      display: block;
+    }
+    div {
+      display: table-cell;
+      text-align: center;
+      width: 16%;
+      padding: {
+        left: 8px;
+        right: 8px;
+        top:40px;
+      }
+    }
+  }
+  div.contentLink .u-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .contentLink-item1-special {
+    display: flex;
+    .contentLink-block {
+      margin-left: 50px;
+    }
+  }
+  .text-and-img-container{
+    display: flex;
+  }
+  .position-box {
+    text-align: center;
+    margin: 0 auto;
+    width: 817px;
+  }
+  .position-box-left {
+    text-align: left;
+    margin: 0 auto;
+    width: 817px;
+  }
+  .sectionTitle {
+    color: white;
+  }
+  .display-under-700 {
+    display: none;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-column {
+    float: left;
+    width: 25%;
+  }
+}
+@media screen and (max-width: 1060px) and (min-width: 700px){
+  .nav-list li{
+    float: left;
+    width: 11.1111%;
+  }
+  .topBanner input {
+    width: 50%;
+  }
+  .as-banner-content {
+    position: absolute;
+    top: 80px;
+  }
+  .middle-part .as-banner-content {
+    position: absolute;
+    left: 10%;
+    top: 50px;
+    width: 400px;
+  }
+  div.contentLink .u-layout {
+    position: relative;
+    clear:both;
+    .contentLink-img {
+      float: left;
+    }
+    .contentLink-block {
+      float: left;
+    }
+  }
+  .contentLink-item1-special {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    .contentLink-block {
+      margin-left: 50px;
+    }
+  }
+  .position-box {
+    text-align: center;
+    margin: 0 auto;
+    width: 85%;
+  }
+  .row2{
+    .col-1 {
+      float: left;
+      width: 33.333%;
+      margin-top: 20px;
+      img {
+        display:inline-block;
+      }
+      span{
+        display: block;
+      }
+    }
+    div {
+      text-align: center;
+    }
+
+  }
+  .clear-float {
+    clear: both;
+  }
+  .text-and-img-container {
+    text-align: center;
+    position: relative;
+    display: block;
+  }
+  .contentLink {
+    display: flex;
+    justify-content: center;
+  }
+  .contentLink-item {
+    display: inline-block;
+    margin: 0 auto;
+    .contentLink-block {
+      margin-left: 30px;
+    }
+  }
+  .sectionTitle {
+    color: white;
+  }
+  .display-under-700 {
+    display: none;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-column {
+    float: left;
+    width: 25%;
+  }
+}
+@media screen and (max-width: 700px){
+  .nav-list li{
+    float: left;
+    width: 11.1111%;
+  }
+  .topBanner .topImg{
+    display: none;
+  }
+  .as-banner-content {
+    margin-top: 50px;
+  }
+  .middle-part {
+    .as-banner-content {
+      width: 85%;
+      margin: 0 auto;
+    }
+    .as-banner-cont {
+    margin-top: 50px;
+    }
+  }
+
+  .topBanner input {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+  div.contentLink .u-layout {
+    float: left;
+    width: 50%;
+  }
+  .position-box {
+    text-align: center;
+    margin: 0 auto;
+    width: 85%;
+  }
+  .row2 {
+    .col-1 {
+      float: left;
+      width: 50%;
+      margin-top: 30px;
+      img {
+        display: inline-block;
+      }
+      span {
+        display: block;
+      }
+    }
+    div {
+      text-align: center;
+    }
+
+  }
+  .clear-float {
+    clear: both;
+  }
+  .n2-container {
+    .text-and-img-container {
+      text-align: center;
+      position: relative;
+      display: block;
+    }
+  }
+  .contentLink {
+    display: flex;
+    justify-content: center;
+    #min-width {
+      width: 70%;
+    }
+    .contentLinkBlockFullWidth {
+      width: 100%!important;
+    }
+    .contentLink-img {
+      text-align: center;
+    }
+  }
+  .contentLink-item1 {
+    display: block;
+    text-align: left;
+    .side-img {
+      display: none;
+    }
+  }
+  .contentLink-item1-special {
+    position: static;
+    .side-img-display {
+      text-align: center;
+    }
+    .contentLink-block {
+      width: 85%;
+      margin: 0 auto;
+    }
+  }
+  .contentLink-item {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .sectionTitle {
+    color: black;
+  }
+  .display-under-700{
+    display: block;
+    margin: 30px 0;
+  }
+}
+
+/******************************/
 nav.header {
   background: black;
   display: block;
   height: 48px;
   width: 100%;
-  min-width: 1024px;
   a:link{
     color: #ffffff;
   }
@@ -37,69 +319,42 @@ nav.header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: {
-    top:12px;
-    bottom: 12px;
-  };
-  li {
-    padding:{
-      left: 40px;
-      right: 40px;
-    };
-  }
+  align-items: center;
 }
 
 .topBanner {
-  min-height: 540px;
   height: auto;
   .topImg {
-    position: absolute;
+    position: relative;
     img {
-    width: 100%;
+    width: 100%
   }
   }
   .as-banner-content {
-    position: absolute;
-    left: 50%;
-    top:200px;
-    transform: translate(-50%);
+
+
+    width: 100%;
+    text-align: center;
     input {
-      width: 100%;
       border:1px solid #dedede;
       border-radius: 3px;
       height: 3rem;
-      margin-top: 10px;
+      margin-top: 30px;
       font-size: 1.375rem;
+      padding-left: 50px;
     }
   }
 
   h1 {
     font: {
-      size: 48px;
+      size: 2rem;
       weight: 500;
       style: normal;
     }
   }
 }
 
-
 .row2 {
-  display: flex;
-  flex-direction: row;
-  max-width: 1024px;
-  margin: auto;
-  flex-wrap: wrap;
-  div {
-    display: table-cell;
-    text-align: center;
-    width: 15%;
-    padding: {
-      left: 8px;
-      right: 8px;
-      top:40px;
-    };
-
-  }
   a{
     &:link {
       color: #000000;
@@ -124,12 +379,10 @@ nav.header {
 .n2-container {
   padding-bottom: 50px;
   .position-box{
-    width: 817px;
+
     margin: auto;
   }
-  .text-and-img-container{
-    display: flex;
-  }
+
 }
 .in-introduce-link{
   margin-top: 20px;
@@ -137,7 +390,7 @@ nav.header {
 
 .large-h2{
   font: {
-    size:40px;
+    size:1.75rem;
     weight: 500;
   }
   margin-bottom:0.28em ;
@@ -145,7 +398,7 @@ nav.header {
 
 .introduce-p{
   font:{
-    size: 220x;
+    size: 1rem;
     weight: 200;
   }
   margin-bottom: 0.25em;
@@ -153,7 +406,7 @@ nav.header {
 
 .large-h3 {
   font:{
-    size:32px;
+    size:1.5rem;
     weight: 400;
   }
 }
@@ -165,19 +418,11 @@ nav.header {
       width: 100%;
     }
   }
-  .as-banner-content {
-    position: absolute;
-    left: 20%;
-    top: 100px;
-    width: 400px;
-  }
+
 }
 
 div.contentLink .u-layout{
 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   img{
     width: 282px;
     height: auto;
@@ -221,21 +466,13 @@ div.contentLink .u-layout{
     text-align: left;
   }
   .contentLink-block{
-    width: 30%;
     margin-right: 50px;
     margin-left: 50px;
   }
-;
 }
 
 .center-title{
   text-align: center;
-}
-.table-responsive{
-  text-align: center;
-  width:50%;
-  margin-left: auto;
-  margin-right: auto;
 }
 .divider-short hr{
   width: 60%;
@@ -250,8 +487,6 @@ footer {
   background: #f2f2f2;
 }
 nav.footer {
-  display: flex;
-  flex-direction: row;
   border-bottom: 1px solid #C0C0C0;
   padding-bottom: 50px;
   width: 60%;
@@ -275,7 +510,6 @@ nav.foote-top{
   };
 }
 .footer-column{
-  padding-right: 130px;
   font: {
     size: 11px;
     weight: 400;
@@ -331,3 +565,5 @@ nav.foote-top{
     }
   }
 }
+
+/*************************************/
